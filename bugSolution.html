@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    const myObject = { message: "Hello", data: [1, 2, 3] };
+    // Correct usage: Convert the object to a string using JSON.stringify()
+    document.getElementById("myDiv").innerHTML = JSON.stringify(myObject, null, 2); 
+  </script>
+</body>
+</html>
